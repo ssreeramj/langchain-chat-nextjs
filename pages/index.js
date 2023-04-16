@@ -72,7 +72,7 @@ export default function Home() {
       return;
     }
 
-    setMessages((prevMessages) => [...prevMessages, { "message": data.result.success, "type": "apiMessage" }]);
+    setMessages((prevMessages) => [...prevMessages, { "message": data.result.text, "type": "apiMessage" }]);
     setLoading(false);
     
   };
