@@ -25,6 +25,4 @@ To learn more about Next.js, take a look at the following resources:
 
 - [LangChain](https://github.com/hwchase17/langchain/) backend implementation can be found [here](https://github.com/hwchase17/chat-langchain).
 
-- Read more on the [LangChain blog](https://blog.langchain.dev/langchain-chat/). 
-
-- Deployed at [chat.langchain.dev](https://chat.langchain.dev/). Feel free to reach out to [Zahid](https://twitter.com/chillzaza_) if you need anything!
+- Read more on the [LangChain blog](https://blog.langchain.dev/langchain-chat/).

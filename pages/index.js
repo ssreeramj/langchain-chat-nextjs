@@ -88,6 +88,17 @@ export default function Home() {
     }
   };
 
+  const handleClearChat = () => {
+    setUserInput("");
+    setHistory([]);
+    setMessages([
+      {
+        "message": "Hi there! How can I help?",
+        "type": "apiMessage"
+      }
+    ]);
+  }
+
   // Keep history in sync with messages
   useEffect(() => {
     if (messages.length >= 3) {
@@ -98,18 +109,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Talk to a Video</title>
+        <title>AI Comedian</title>
         <meta name="description" content="LangChain documentation chatbot" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.topnav}>
       <div className = {styles.navlogo}>
-    <a href="/">Talk to a Video</a>
+    <a href="/">Comedian AI</a>
     </div>
     <div className = {styles.navlinks}>
-    {/* <a href="https://langchain.readthedocs.io/en/latest/" target="_blank">Docs</a> */}
-    {/* <a href="https://github.com/zahidkhawaja/langchain-chat-nextjs" target="_blank">GitHub</a> */}
+    <a href="https://langchain.readthedocs.io/en/latest/" target="_blank">Docs</a>
+    <a href="https://github.com/ssreeramj/langchain-chat-nextjs" target="_blank">GitHub</a>
     </div>
 </div>
       <main className={styles.main}>
@@ -161,6 +172,10 @@ export default function Home() {
           </svg>}
             </button>
             </form>
+            <div align="center"> 
+              <button className="clear-button" onClick={handleClearChat}>Clear</button>
+            </div>
+
             </div>
             <div className = {styles.footer}>
             {/* <p>Powered by <a href = "https://github.com/hwchase17/langchain" target="_blank">LangChain</a>. Built by <a href="https://twitter.com/chillzaza_" target="_blank">Zahid</a>.</p> */}

@@ -26,3 +26,21 @@ a {
 a:hover {
   opacity: 0.8;
 }
+
+.clear-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #30373d;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;  
+}
+
+.clear-button:hover {
+  background-color: #30373d;
+}
